@@ -103,7 +103,8 @@ a:hover{
     height: 2.25em;
     overflow:hidden;
     font-family:Devils,sans-serif;
-    background: var(--heading);
+    /* background: var(--heading); */
+    background: transparent;
     color: var(--default);
     border: 2.5px solid var(--heading);
     position: relative;
@@ -161,3 +162,9 @@ a:hover{
       opacity: 0;
     }
   }
+
+
+  /* #who{
+    width: 1920px;
+    height: 1080px;
+  } */
