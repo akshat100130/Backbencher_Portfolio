@@ -1,0 +1,246 @@
+@import "fonts.css";
+
+:root{
+    --default:#171717;
+    --heading : #8EFFBB;
+    --text : #FFFFFF;
+    --back : #F5F9FF;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #171717;
+    position: relative;
+}
+
+
+/* 
+   ################################
+   ################# Navbar 
+   ################################  
+*/
+
+#navBar .navbar{
+    height: 13vh;
+}
+
+#navBar .navbar-brand img{
+    width: 8em;
+}
+
+#navBar .navbar>.container{
+    border-bottom: 1px solid #b2b1b1;
+    padding: 20px 0;
+}
+
+#navBar .nav_links{
+    width: auto;
+    padding-right: 10px;
+}
+
+#navBar .nav_links a{
+    padding-left: 80px; 
+    text-decoration: none;
+    font-family: PoppinsLight,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    overflow: hidden;
+    white-space : nowrap;
+    color: var(--text);
+    opacity: 80%;
+}
+#navBar .nav_links a:hover{
+    color: #8EFFBB;
+    /* font-family:Devils,sans-serif; */
+}
+#navBar .nav_links a.active{
+    color: #8EFFBB;
+    font-family:Devils,sans-serif;
+}
+
+/* 
+   ################################
+   ################# Home 
+   ################################  
+*/
+
+#home{
+    display: flex;
+    background-image: url("../images/backgroundimg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: -13vh;  */
+    z-index: -1;
+}
+#home .homeContent{
+    position: absolute;
+    top: 35vh;
+}
+#home .homeContent h1{
+    /* margin-top: 3em; */
+    /* position: relative; */
+    color: var(--heading);
+    font-size: 5.5rem;
+    font-family:Zallord,sans-serif;
+    margin: 1rem 0 2rem 0;
+}
+
+#home .homeContent p{
+    color: var(--text);
+    opacity: 0.9;
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+#home .homeContent button{
+    background-image: url("../1.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#home .homeContent button:hover{
+    background-image: url("../2.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.scrolldown {
+    --color: white;
+    opacity: 0.9;
+    --sizeX: 30px;
+    --sizeY: 45px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin:auto;
+    border: calc(var(--sizeX) / 15) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+    background: #171717;
+  }
+  
+  .scrolldown:before {
+    content: "";
+    position: absolute;
+    bottom: 25px;   
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background-color: var(--color);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #ffffff66;
+  }
+  .scrolldown:hover:before{
+    animation: scrolldown-anim 2s infinite;
+  }
+  
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+
+/* 
+   ################################
+   ################# Who 
+   ################################  
+*/
+
+#who{
+    height: 100%;
+    padding: 6rem 0;
+}
+
+#who .leftSection{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#who .leftSection img{
+    height: 80%;
+}
+
+#who h1{
+    font-size: 3rem;
+    font-family:Zallord,sans-serif;
+    color: var(--heading);
+
+    padding-bottom: 2rem;
+}
+
+#who p{
+    font-size: 1rem;
+    font-family: var(--text);
+    color: var(--text);
+
+    padding-bottom: 2rem;
+}
+
+#who button{
+    background-image: url("../1.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#who button:hover{
+    background-image: url("../2.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+/* 
+   ################################
+   ################# Fresh 
+   ################################  
+*/
+
+#fresh{
+    height: 80vh;
+    padding: 6rem 0;
+    background-color: #1C1D20;
+    clip-path: polygon(10% 0, 100% 0, 100% 75%, 88% 100%, 0 100%, 0 22%);
+}
