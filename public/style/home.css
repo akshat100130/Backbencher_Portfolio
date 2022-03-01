@@ -5,6 +5,7 @@
     --heading : #8EFFBB;
     --text : #FFFFFF;
     --back : #F5F9FF;
+    --secondary: #FFC38E;
 }
 
 html{
@@ -239,10 +240,14 @@ body{
 */
 
 #fresh{
-    height: 90vh;
+    height: 100vh;
     padding: 4rem 0;
     background-color: #1C1D20;
     clip-path: polygon(5% 0, 100% 0, 100% 75%, 95% 100%, 0 100%, 0 25%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 #fresh .heading{
     text-align: center;
@@ -251,14 +256,18 @@ body{
 #fresh .imgContainer{
     /* overflow-x: scroll;
     overflow-y: hidden; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
 }
 #fresh  .imgContainer .freshCard{
     background-image: url("../images/card1.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    margin-left: 4rem;
     height: 400px;
     width: 314px;
+    /* fill: #8EFFBB; */
 
     padding: 1.6rem;
 }
@@ -401,6 +410,7 @@ body{
  */
 
  #whathedo{
+    margin-top: 2rem;
     padding: 4rem 0;
     height: 87vh;
 }
@@ -467,5 +477,45 @@ body{
 #whathedo .sider{
     height: 90%;
     width: 90%;
+}
+
+/*
+   ################################
+   ################# Centerpiece
+   ################################  
+*/
+#centerpiece{
+    height: 60vh;
+    display: flex;
+
+}
+#centerpiece .backimg{
+    background-image: url("../images/backer.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding:3rem;
+}
+#centerpiece .backimg h4{
+    font-family: Zallord,sans-serif;
+    font-size: 5rem;
+    color: var(--secondary);
+}
+#centerpiece .backimg p{
+    padding: 0 8rem;
+    margin-top: 2rem;
+    text-align: center;
+    color:var(--text);
+}
+#centerpiece .backimg button{
+    background-image: url("../1.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin-top:1rem;
+    margin-bottom: 1rem;
 }
 
