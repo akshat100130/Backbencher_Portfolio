@@ -199,7 +199,7 @@ body{
 
     padding-bottom: 2rem;
 
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
 }
@@ -242,7 +242,10 @@ body{
     height: 90vh;
     padding: 4rem 0;
     background-color: #1C1D20;
-    clip-path: polygon(5% 0, 100% 0, 100% 75%, 95% 99%, 0 100%, 0 25%);
+    clip-path: polygon(5% 0, 100% 0, 100% 75%, 95% 100%, 0 100%, 0 25%);
+}
+#fresh .heading{
+    text-align: center;
 }
 
 #fresh .imgContainer{
@@ -344,8 +347,8 @@ body{
     /* clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%); */
     position: relative;
     background: var(--heading);
-	-webkit-clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%);
-    clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%);
+	-webkit-clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
     /* background-color: #1C1D20; */
     width: 30rem;
     height: 3rem;
@@ -359,7 +362,7 @@ body{
     bottom: 2px;
     background: #2E3240;
 	-webkit-clip-path: polygon(5% 0, 100% 0, 100% 54%, 95% 100%, 0 100%, 0 46%);
-    clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
 }
 
 
@@ -380,7 +383,7 @@ body{
     height: 3rem;
     background-color: var(--heading);
 
-    clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
 
     border: none;
     outline: none;
@@ -389,3 +392,80 @@ body{
     font-size: 1rem;
     font-family: Devils,sans-serif;
 }
+
+
+/*
+ ################################
+ ################# What he do
+ ################################
+ */
+
+ #whathedo{
+    padding: 4rem 0;
+    height: 87vh;
+}
+#whathedo h1{
+    font-family: Zallord,sans-serif;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+#whathedo .rightside{
+    display: flex;
+}
+#whathedo .sideimages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#whathedo .imager{
+    padding-top: 2rem;
+}
+#whathedo .vl{
+  border-left: 6px solid green;
+  height: 5rem;
+  margin-bottom: -5rem;
+  margin-top: -2rem;
+  z-index: -3;
+}
+#whathedo .chosen{
+
+    height: 60%;
+    width: 60%;
+}
+#whathedo .notchosen{
+    
+    height: 35%;
+    width: 35%;
+}
+
+#whathedo .rightside .texter{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+#whathedo .rightside .texter .innerhead{
+    font-family: Devils,sans-serif;
+    color: var(--heading);
+    font-size: 2rem;
+    /* margin-bottom: 0; */
+    padding-bottom: 0;
+}
+#whathedo .rightside .texter .desc{
+    /* margin-top: 0; */
+    font-family: Poppins,sans-serif;
+    color: var(--text);
+}
+#whathedo .rightside .texter button{
+    background-image: url("../1.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#whathedo .sider{
+    height: 90%;
+    width: 90%;
+}
+
