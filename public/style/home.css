@@ -111,6 +111,10 @@ body{
 }
 
 #home .homeContent button:hover{
+
+    transition-timing-function: ease-in;
+    transition: 0.75s;
+
     background-image: url("../2.png");
     border: none;
     height: 50px;
@@ -233,100 +237,84 @@ body{
     justify-content: center;
 }
 
+
 /*
+
+/* 
    ################################
-   ################# Get In Touch
+   ################# Fresh 
    ################################  
 */
 
-#getInTouch{
+#fresh{
+    height: 90vh;
     padding: 4rem 0;
-    height: 87vh;
+    background-color: #1C1D20;
+    clip-path: polygon(5% 0, 100% 0, 100% 75%, 95% 100%, 0 100%, 0 25%);
 }
-
-#getInTouch h1{
-    font-size: 5rem;
-    font-family: Zallord,sans-serif;
-    color: var(--heading);
-
-    padding-bottom: 2rem;
-
+#fresh .heading{
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
-#getInTouch img{
-    height: 85%;
-    width: 85%;
+#fresh  .imgContainer .freshCard{
+    background-image: url("../images/card1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 400px;
+    width: 314px;
+
+    padding: 1.6rem;
+}
+#fresh  .imgContainer .freshCard .cardImg{
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 25%);
+    background-color: #2D2B34;
+    width: 100%;
+    height: 8rem;
 }
 
-#getInTouch .contactForm .singleInputGroup{
-    padding-bottom: 2rem;
-}
-
-#getInTouch .contactForm .singleInputGroup p{
+#fresh  .imgContainer .freshCard h4{
     font-size: 1rem;
     color: #8EFFBB;
     font-family: Devils,sans-serif;
-}
-
-#getInTouch .contactForm .singleInputGroup .outerInputField{
-    /* clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%); */
-    position: relative;
-    background: var(--heading);
-	-webkit-clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
-    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
-    /* background-color: #1C1D20; */
-    width: 30rem;
-    height: 3rem;
-}
-
-#getInTouch .contactForm .singleInputGroup .outerInputField .innerInputField{
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    background: #2E3240;
-	-webkit-clip-path: polygon(5% 0, 100% 0, 100% 54%, 95% 100%, 0 100%, 0 46%);
-    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+    
+    padding: 1.6rem 0;
+    margin: 0 5px;
 }
 
 
-#getInTouch .contactForm .singleInputGroup .outerInputField .innerInputField input{
-    width: 90%;
-    height: 80%;
-    margin: 0.3rem 1.5rem;
-
-    background-color: transparent;
+#fresh  .imgContainer .freshCard p{
+    font-size: 0.7rem;
     color: var(--text);
-    font-size: 1rem;
-    border: none;
-    outline: none;
+    text-align: left;
 }
 
-#getInTouch .contactForm button{
-    width: 30rem;
-    height: 3rem;
-    background-color: var(--heading);
-
-    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
-
+#fresh  .imgContainer .freshCard button{
+    background-image: url("../1.png");
     border: none;
-    outline: none;
-
-    color: var(--default);
-    font-size: 1rem;
-    font-family: Devils,sans-serif;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
 }
 
+#fresh  .imgContainer .freshCard button:hover{
+    background-image: url("../2.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
 
 /*
  ################################
  ################# What he do
  ################################
  */
+
  #whathedo{
     padding: 4rem 0;
     height: 87vh;
@@ -351,7 +339,6 @@ body{
 #whathedo .sideimages .line{
     margin-top: -1rem;
     z-index: -5;
-    
 }
 
 #whathedo .sideimages button{
@@ -436,6 +423,278 @@ body{
 #whathedo .sider{
     height: 90%;
     width: 90%;
+}
+
+/* 
+################################
+   ################# Get In Touch
+   ################################  
+*/
+
+#getInTouch{
+    padding: 4rem 0;
+    height: 100%;
+}
+
+#getInTouch h1{
+    font-size: 5rem;
+    font-family: Zallord,sans-serif;
+    color: var(--heading);
+
+    padding-bottom: 2rem;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#getInTouch img{
+    height: 85%;
+    width: 85%;
+}
+
+#getInTouch .contactForm .singleInputGroup{
+    padding-bottom: 2rem;
+}
+
+#getInTouch .contactForm .singleInputGroup p{
+    font-size: 1rem;
+    color: #8EFFBB;
+    font-family: Devils,sans-serif;
+}
+
+#getInTouch .contactForm .singleInputGroup .outerInputField{
+    /* clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%); */
+    position: relative;
+    background: var(--heading);
+	-webkit-clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+    /* background-color: #1C1D20; */
+    width: 30rem;
+    height: 3rem;
+}
+
+#getInTouch .contactForm .singleInputGroup .outerInputField .innerInputField{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #2E3240;
+	-webkit-clip-path: polygon(5% 0, 100% 0, 100% 54%, 95% 100%, 0 100%, 0 46%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+}
+
+
+#getInTouch .contactForm .singleInputGroup .outerInputField .innerInputField input{
+    width: 90%;
+    height: 80%;
+    margin: 0.3rem 1.5rem;
+
+    background-color: transparent;
+    color: var(--text);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#getInTouch .contactForm button{
+    width: 30rem;
+    height: 3rem;
+    background-color: var(--heading);
+
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+
+    border: none;
+    outline: none;
+
+    color: var(--default);
+    font-size: 1rem;
+    font-family: Devils,sans-serif;
+}
+
+/*
+ ################################
+ ################# Footer
+ ################################
+ */
+
+ #whathedo{
+    padding: 4rem 0;
+    height: 87vh;
+}
+
+#whathedo h1{
+    font-family: Zallord,sans-serif;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+#whathedo .rightside{
+    display: flex;
+}
+
+#whathedo .sideimages{
+    display: flex;
+    flex-direction: column;
+}
+
+ #footer{
+    height: 6rem;
+    background-color: var(--default);
+    color: var(--text);
+    font-size: 1rem;
+
+    /* padding: 2.5rem; */
+    text-align: center;
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+    clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 44%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 44%);
+    background: var(--heading);
+
+}
+
+
+#whathedo .sideimages .line{
+    margin-top: -1rem;
+    z-index: -5;
+    
+}
+
+#whathedo .sideimages button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: auto;
+    width: auto;
+}
+
+#whathedo .sideimages .imager{
+    margin-top: -3rem;
+
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+#whathedo .sideimages .chosen{
+    height: 5rem;
+    width: 5rem;
+
+    transition-timing-function: ease-out;
+    transition: 0.75s;
+}
+
+#whathedo .rightside .texter{
+    margin-top: 4rem;
+    margin-left: 2rem;
+
+    display: none;
+}
+
+#whathedo .rightside .texter.Disp{
+    display: block;
+    transition-timing-function: ease-in;
+    transition: 5s;
+}
+/* 
+#whathedo .rightside .texter .disp{
+    display: none;
+} */
+
+#whathedo .rightside .texter .innerhead1{
+    font-family: Devils,sans-serif;
+    color: var(--heading);
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .innerhead2{
+    font-family: Devils,sans-serif;
+    color: #8ECAFF;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .innerhead3{
+    font-family: Devils,sans-serif;
+    color: #FF8E8E;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .desc{
+    /* margin-top: 0; */
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+#whathedo .rightside .texter button{
+    background-image: url("../1.png");
+
+
+#footer .outerFooter{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: var(--default);
+	clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45%);
+
+    color: var(--text);
+}
+
+#footer .outerFooter .innerFooter{
+    padding: 1.8rem;
+}
+
+#footer .outerFooter .innerFooter .footerText p{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 0;
+    margin-top: 0.4rem;
+}
+#footer .outerFooter .innerFooter .socials .outerIcon{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: #CECECE;
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+
+    margin-right: 1rem;
+}
+#footer .outerFooter .innerFooter .socials .innerIcon{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    left: 1px;
+    bottom: 1px;
+    background-color: var(--default);
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+}
+
+#footer .outerFooter .innerFooter .socials .outerIcon .innerIcon button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#footer .outerFooter .innerFooter .socials .outerIcon .innerIcon button>img{
+    height: 1.2rem;
+    width: 1.2rem;
 }
 
 

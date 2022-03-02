@@ -23,9 +23,14 @@
 
     <link rel="stylesheet" href="./public/style/home.css">
     <script src="https://kit.fontawesome.com/d94e9b5196.js" crossorigin="anonymous"></script>
+    <script src="./public/js/index.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarScroll" data-bs-offset="0">
+
     <section id="navBar">
         <nav class="navbar fixed-top navbar-expand-lg nav-max" id="navbarScroll">
             <div class="container col-md-10">
@@ -83,10 +88,15 @@
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <h1 class="heading">WHO AM I?</h1>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam error, sit molestias molestiae quibusdam excepturi maiores. Expedita commodi suscipit voluptas blanditiis? Delectus rem modi recusandae libero ducimus? Fugit, iste quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis sapiente voluptatum maiores voluptate veniam architecto, maxime dolore voluptatem alias voluptas, a corporis aliquam debitis?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam error, sit molestias molestiae
+                        quibusdam excepturi maiores. Expedita commodi suscipit voluptas blanditiis? Delectus rem modi
+                        recusandae libero ducimus? Fugit, iste quo. Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis sapiente voluptatum maiores
+                        voluptate veniam architecto, maxime dolore voluptatem alias voluptas, a corporis aliquam
+                        debitis?</p>
 
                     <button></button>
                 </div>
@@ -98,6 +108,7 @@
 
     <section id="fresh">
         <h1 class="heading">FRESH OF THE PACK</h1>
+
         <div id="imgContainer">
             <div id="slider">
                 <div class="slide">
@@ -184,6 +195,16 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.lo</p>
                     <button></button>
                 </div>
+        <div class="imgContainer container">
+
+            <div class="freshCard">
+                <div class="cardImg"></div>
+                <h4>MUSIC PRODUCTION</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button></button>
+            </div>
+
 
                 
             </div>
@@ -193,7 +214,9 @@
             <img onclick="slideLeft()" class="right" src="./public/images/right.svg" alt="->">
         </div>
     </section>
+
     <!-- ############################################### WHAT HE DO  -->
+
     <section id="whathedo">
         <div class="container">
             <div class="row">
@@ -261,6 +284,7 @@
         </div>
         </div>
     </section>
+
     <!-- ############################################### Centerpiece -->
     <section id="centerpiece">
         <div class="container">
@@ -274,6 +298,7 @@
         </div>
     </section>
 
+
     <!-- ############################################### GET IN TOUCH -->
 
     <section id="getInTouch">
@@ -284,7 +309,7 @@
                     <img src="./public/images/getInTouch.svg" alt="Get In Touch">
                 </div>
                 <div class="col-md-6 col-sm-12 contactForm">
-                    
+
                     <div class="singleInputGroup">
                         <p>Name</p>
                         <div class="outerInputField">
@@ -293,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="singleInputGroup">
                         <p>Email Address</p>
                         <div class="outerInputField">
@@ -302,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="singleInputGroup">
                         <p>Message</p>
                         <div class="outerInputField">
@@ -321,6 +346,46 @@
      <!-- ############################################### FOOTER -->
 
      <section id="footer">
+
+        <div class="outerFooter">
+            <div class="container innerFooter">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <img src="./public/images/Footer_Logo.svg" alt="footer_logo">
+                    </div>
+                    <div class="col-md-6 col-sm-12 footerText">
+                        <p>
+                            © dhruv-jindal - 2021. Designed by AVS Technologies
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 socials">
+                        <div class="row">
+                            <div class="outerIcon">
+                            <div class="innerIcon">
+                                <button><img src="./public/images/icons8-linkedin-circled.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="outerIcon">
+                            <div class="innerIcon">
+                                <button><img src="./public/images/icons8-facebook-logo.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="outerIcon">
+                            <div class="innerIcon">
+                                <button><img src="./public/images/icons8-twitter-circled.svg" alt=""></button>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############################################### FOOTER -->
+
+    <section id="footer">
 
         <div class="outerFooter">
             <div class="container innerFooter">
